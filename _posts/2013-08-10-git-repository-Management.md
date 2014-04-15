@@ -12,7 +12,7 @@ In this section you will find a full scenario on how to use GIT to create a proj
 git config --global user.name "Your Name"
 
 git config --global user.email "name@yourdomain.com"
-
+  
 <!--more-->
 
 This step is important since the above details will appear when you commit modifications in the repository. In this way your collaborators will know who has updated the repository content.
