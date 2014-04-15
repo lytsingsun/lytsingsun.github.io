@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Active Record 随笔 - signifox's blog</title>
+    <title>Active Record 随笔 - Lytsingsun's blog</title>
     <meta name="description" content="jelyll theme">
-    <meta name="author" content="hushaw">
+    <meta name="author" content="lytsingsun">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/static/favicon.ico" rel="shortcut icon">
     <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
@@ -47,6 +47,8 @@
             
             <a href="/categories.html#rails-ref">rails</a>
             
+            <a href="/categories.html#原创-ref">原创</a>
+            
         </span>
         <span><i class="fa fa-ellipsis-v"></i></span>
         <span>
@@ -59,9 +61,7 @@
         <span>
     </div>
     <div class="post-entry">
-        <h1>Active Record 随笔</h1>
-
-<h2>1 什么是Active Record</h2>
+        <h2>1 什么是Active Record</h2>
 
 <hr />
 
@@ -381,13 +381,36 @@
 
 <hr />
 
+<p>curl -XPUT http://localhost:9200/medcl/ -d'
+{
+    "index" : {
+        "analysis" : {
+            "analyzer" : {
+                "pinyin_analyzer" : {
+                    "tokenizer" : "my_pinyin",
+                    "filter" : ["standard"]
+                }
+            },
+            "tokenizer" : {
+                "my_pinyin" : {
+                    "type" : "pinyin",
+                    "first_letter" : "prifix",
+                    "padding_char" : ""
+                }
+            }
+        }
+    }
+}'</p>
+
     </div>
 </div>
 <div class="post-blank post-pager">
     <ul class="pager">
         
-        <li class="previous"><a href="/2013-08/git-common-command/">&larr; 上一篇</a></li>
+        <li class="previous"><a href="/2013-08/git-repository-Management/">&larr; 上一篇</a></li>
         
+        
+        <li class="next"><a href="/2014-01/angularjs/">下一篇 &rarr;</a></li>
         
     </ul>
 </div>
@@ -414,8 +437,8 @@
          <span>
              Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> 
              | Hosted by <a href="http://github.com">Github.com</a> 
-             | UI Designed by <a href="/about.html">hushaw</a> 
-             | <span class="page-generator-time">2014年04月10日 18时38分32秒 </span> 
+             | UI Designed by <a href="/about.html">lytsingsun</a> 
+             | <span class="page-generator-time">2014年04月15日 21时10分17秒 </span> 
              | 本站理念：生命不息，折腾不止..
          </span>
      </div>

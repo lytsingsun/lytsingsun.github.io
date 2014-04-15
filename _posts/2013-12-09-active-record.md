@@ -1,11 +1,9 @@
 ---
 layout: post
 title: Active Record 随笔
-categories: Rails
+categories: Rails 原创
 tags: rails active_record
 ---
-
-# Active Record 随笔
 
 ## 1 什么是Active Record  
 
